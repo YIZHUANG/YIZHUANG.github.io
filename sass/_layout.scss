@@ -1,0 +1,49 @@
+.Mycontainer {
+  max-width: 75%;
+  margin: 8rem auto;
+  box-shadow: var(--shadow-dark);
+  min-height: 100vh;
+  @media only screen and (max-width: $bp-large) {
+    max-width: 100%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 2rem auto;
+  }
+}
+
+.header {
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    height: 60rem;
+  }
+}
+
+.content {
+  display: flex;
+  box-shadow: var(--shadow-light);
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.experience {
+  flex: 0 0 40%;
+  background-color: var(--color-grey-primary);
+  max-height: 70rem;
+  @media only screen and (max-width: $bp-largest) {
+    max-height: 80rem;
+  }
+  @media only screen and (max-width: $bp-medium-small) {
+    max-height: 90rem;
+  }
+}
+
+.infoContainer {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
